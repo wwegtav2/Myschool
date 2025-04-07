@@ -2,4 +2,4 @@ services:
   - type: web
     name: myschool-site
     runtime: static
-    staticPublishPath: html
+    staticPublishPath: .
