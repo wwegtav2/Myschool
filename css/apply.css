@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+
+body {
+    background: url(../img/App2.png) no-repeat center center/cover;
+    font: 400 15px Lato, "Playwrite GB S";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 450px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+
+    label {
+        color: #090b76;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #090b76;
+    }
+
+    ::placeholder {
+        color: #ffffff;
+        font: 300 15px Lato, 'Prompt', sans-serif;
+    }
+
+    select {
+        color: #ffffff;
+        font: 300 15px Lato, 'Prompt', sans-serif;
+    }
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    input {
+        width: 45%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    background: #0b0958;
+    color: #ffffff;
+}
+
+.c-button {
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Playwrite GB S";
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+.c-button--gooey {
+    color: #150723;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid #1f0951;
+    border-radius: 0;
+    position: relative;
+    transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+}
+
+.c-button--gooey .c-button__blobs div {
+    background-color: #1f0951;
+    width: 50%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+    color: #ffffff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+}
+
+.num {
+    width: 100%;
+    margin: 10px 34%;
+    font-size: 15px;
+
+    a {
+        border-radius: 10px;
+        padding: 5px 10px;
+        background-color: #1f0951;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    a:hover {
+        background-color: #150723;
+    }
+
+}

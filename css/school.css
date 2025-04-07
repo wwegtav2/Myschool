@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+
+
+body {
+    font: 400 15px Lato, 'Prompt', sans-serif;
+    line-height: 1.8;
+    color: #4b4848;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #4a2790;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #121212;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.jumbotron {
+    background-image: url(../img/nnb2\ \(1\).jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* ใช้ความสูงเต็มหน้าจอ */
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* จัดกลางแนวตั้ง */
+    align-items: center;
+    /* จัดกลางแนวนอน */
+    overflow: hidden;
+
+    img {
+        /*เปลียนเป็นวิดีโอได้*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    h1,
+    h3 {
+        z-index: 1;
+        /* ทำให้ข้อความทับภาพ */
+        text-shadow: 3px 5px #000000cc;
+        /* เพิ่มเงาให้อ่านง่าย */
+    }
+}
+
+.container-fluid p {
+    text-align: left;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+.input-group {
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.logo-small {
+    font-size: 50px;
+}
+
+.logo {
+    width: 90%;
+    height: auto;
+    margin: 30px 45px;
+    border-radius: 5px;
+}
+
+.logo2 {
+    width: 90%;
+    height: auto;
+    margin: 60px 10px;
+    border-radius: 5px;
+}
+
+.Activity-img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.Activity-img:hover {
+    filter: brightness(50%) sepia(1) hue-rotate(180deg);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000e6;
+}
+
+.overlay img {
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 5% auto;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 80px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.col-sm-4 p {
+    font-size: 16px;
+    color: #33144c;
+}
+
+.thumbnail {
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+
+}
+
+.thumbnail img {
+    border-radius: 13px;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+#imageOverlay img {
+    border-radius: 15px;
+    /* ปรับค่าตามต้องการ */
+}
+
+
+.thumbnail img:hover {
+    filter: brightness(50%) sepia(1) hue-rotate(180deg);
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+    color: #000;
+}
+
+.carousel-indicators li {
+    border-color: #17075c;
+}
+
+.carousel-indicators li.active {
+    background-color: #492f7e;
+}
+
+.director1 {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.director2 {
+    width: 75.5%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.director3 {
+    width: 66.5%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+.panel {
+    border: 3px solid #380b6b;
+    border-radius: 0 !important;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px #0f1fd533;
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+}
+
+.panel-heading {
+    color: #ffffff !important;
+    background-color: #1c1183 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color: white !important;
+}
+
+.panel-footer h3 {
+    font-size: 32px;
+}
+
+.panel-footer h4 {
+    color: #240853;
+    font-size: 25px;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #2f1d59;
+    color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    /* เริ่มต้นเป็นโปร่งใส */
+    transition: background-color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #ffffff !important;
+    font-weight: 700;
+    /* ตัวหนา */
+    font-size: 15px;
+    text-shadow: 5px 5px 5px #FFD700;
+    /* เพิ่มเงาตัวอักษร */
+    transition: text-shadow ease-in-out;
+    /* ทำให้เงาค่อยๆ หายไป */
+    text-decoration: underline 5px;
+}
+
+/* เมื่อเลื่อนลง ให้เงาหายไป */
+.navbar.scrolled li a,
+.navbar.scrolled .navbar-brand {
+    text-shadow: none !important;
+    /* ลบเงาเมื่อเลื่อนลง */
+    text-decoration: none;
+}
+
+/* เมื่อเอาเมาส์ไปวางบนลิงก์ ให้เงาหายไป */
+.navbar li a:hover,
+.navbar .navbar-brand:hover {
+    text-shadow: none !important;
+}
+
+.navbar.scrolled {
+    background-color: navy;
+    /* เปลี่ยนเป็นสีน้ำเงินเมื่อเลื่อนลง */
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #19063c !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-height: 45px;
+    /* ขนาดสูงสุดของโลโก้ */
+    margin-right: 5px;
+    /* เว้นระยะโลโก้ */
+}
+
+
+
+footer .glyphicon {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #471193;
+}
+
+.footer-p {
+    color: #000;
+    font-size: 15px;
+}
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+.c-button {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+.c-button--gooey {
+    color: #150723;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid #1f0951;
+    border-radius: 0;
+    position: relative;
+    transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+}
+
+.c-button--gooey .c-button__blobs div {
+    background-color: #1f0951;
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+    color: #ffffff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+}
+
+.btn {
+    padding: 0.8em 1.8em;
+    border: 2px solid #1e147a;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #000000;
+}
+
+.btn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #1e147a;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 105%;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+.col-sm-5 p {
+    color: #1b0e43;
+}
+
+.w3-image w3-greyscale-min {
+    display: flex;
+}
+
+.GoogleMAP {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: auto;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.GoogleMAP iframe {
+    pointer-events: auto;
+    /* เปิดการโต้ตอบกับแผนที่ */
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.text ins {
+    text-align: center;
+    width: 100%;
+}
+
+.col-md-5,
+.col-md-7 {
+    margin-top: 5%;
+}
+
+.som {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.som img {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+
+    .col-md-5,
+    .col-md-7 {
+        width: 100%;
+    }
+}
+
+/* ซ่อนกล่อง Modal ไว้ก่อน */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000b3;
+    justify-content: center;
+    align-items: center;
+}
+
+/* เนื้อหาในกล่อง */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 950px;
+    max-height: 80%;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+    /* ทำให้ปุ่มอยู่ในกรอบนี้ */
+}
+
+/* ส่วนหัวของ Modal รวมถึงปุ่มปิด */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* ปุ่มปิดอยู่ในกล่อง */
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    background: #260658;
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.Activit-img-ioo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        /* มุมโค้งนิดๆ ให้ดูนุ่มนวล */
+        box-shadow: 2px 2px 10px #0f0b5355;
+        /* เพิ่มเงาให้ภาพดูโดดเด่น */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+        /* ขยายเล็กน้อยเวลาเอาเมาส์ไปวาง */
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+}
+
+.council {
+    display: none;
+}
+
+.council.active {
+    display: block;
+}
+
+.button-student {
+    font-size: 16px;
+    color: #030d52;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #062b5f;
+    background: #ffffff;
+    box-shadow: 3px 3px #062b5f;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.button-student:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
